@@ -75,13 +75,10 @@ public class Main {
                 toppings.add(extraTopping);
             }
         }
+        price = price + (toppings.size() * 1.25);
         System.out.println("your pizza is complete!");
         System.out.println("your pizza is a " + size + " with toppings " + toppings);
-        System.out.println("your pizza costs £" + (price + (1.25 * (toppings.size() - 2))));
+        System.out.println("your pizza costs £" + price);
 
     }
 }
-
-
-
-
